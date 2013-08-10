@@ -1,0 +1,11 @@
+{
+  "name": "raspberry-pi_socket-server",
+  "description": "Socket node tests on the RaspberryPI.",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "underscore": "1.x.x",
+    "monobrow-server": "0.x.x",
+    "monobrow-client": "0.x.x"
+  }
+}
