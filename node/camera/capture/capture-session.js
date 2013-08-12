@@ -32,8 +32,8 @@ CaptureSession.prototype = Object.create(EventEmitter.prototype, {
 			Util.log("capture");
 
 			var delegate = this;
-			var options = ["-t", "250", "-o", "~/Desktop/image.jpg", "-e", "jpg", "-w", "400", "-h", "300", "-q", "75", "-n"];
-			var capture = spawn("ls", options);
+			var options = ["-t", "250", "-o", "image.jpg", "-e", "jpg", "-w", "400", "-h", "300", "-q", "75", "-n"];
+			var capture = spawn("raspistill", options);
 
 			capture.stdout.on('data', function(data) {
 				// ...
